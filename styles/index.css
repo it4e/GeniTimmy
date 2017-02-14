@@ -3,7 +3,7 @@
     transform: translateX(-50%);
     left: 50%;
     width: 90%;
-    background-color: rgba(93, 76, 76, 0.4);
+    background-color: rgba(150, 150, 170, 0.6);
     background-blend-mode: darken;
     border-radius: 10px;
     box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.7);
@@ -36,4 +36,12 @@
     font-family: 'Pangolin', cursive;
     font-size: 30px;
     color: black;
+}
+
+main h1{
+    text-shadow: 0px 0px 3px white;
+}
+
+main h3{
+    text-shadow: 0px 0px 3px white;
 }
