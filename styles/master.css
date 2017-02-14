@@ -126,4 +126,8 @@ h4{
     h2{
         font-size: 60px;
     }
+
+    .movingHeader{
+        height: 9em;
+    }
 }
