@@ -8,20 +8,19 @@
 
 
 html{
-    height: 100%;
     margin: 0;
     padding: 0;
 }
 body{
-    height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url(http://www.texturepalace.com/gallery/paper/10923/2paper_texture_big_100923.jpg);
+    background-image: url(../img/bg.jpg);
     background-color: rgba(255,255,255,0.9);
+    padding-bottom: 2em;
 }
 
 main{
-    height: 70%;
+    margin-bottom: 2em;
 }
 
 #header{
@@ -36,8 +35,8 @@ main{
 }
 
 #footer{
-    height: 30%;
-    position: relative;
+    height: 2em;
+    position: fixed;
     bottom: 0;
     background-color: white;
     width: 100%;
@@ -47,6 +46,9 @@ main{
 
 .text-title{
     display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     margin: 0;
     padding: 0;
 }
