@@ -32,8 +32,8 @@ void _get_average(char * args) {
   
   chl_mysql_free_result();
 
-  printf("<p>Average circ: %d - your circ: %s</p>", avg_width / nr, chl_post("width"));
-  printf("<p>Average length: %d - your length: %s</p>", avg_length / nr, chl_post("length"));
+  printf("<p id='result_circ'>Average circ: %d - your circ: %s</p>", avg_width / nr, chl_post("width"));
+  printf("<p id='result_len'>Average length: %d - your length: %s</p>", avg_length / nr, chl_post("length"));
 }
 
 int main() {
@@ -42,10 +42,10 @@ int main() {
   if(chl_post("submit")) {
     db_connect();
     insert_data();
-
-    chl_view("results.vw");
   }
-  
+
+  chl_view("results.vw");
   chl_mysql_close();
+
   return 0;
 }
